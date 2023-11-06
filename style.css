@@ -221,6 +221,7 @@
      width: 18.75rem;
      height: 100vh;
      justify-content: start;
+     text-align: center;
      
 
      
@@ -237,7 +238,8 @@
     .list{
       
       margin-bottom: 5rem;
-      padding-left: 40%;
+      
+      text-align: center;
       cursor: pointer;
       color: black;
     }
@@ -332,6 +334,7 @@
    width: 18.75rem;
    height: 100vh;
    justify-content: start;
+   text-align: center;
    
 
    
@@ -393,6 +396,7 @@
    width: 13.125rem;
    height: 100vh;
    justify-content: start;
+   text-align: center;
    
 
    
@@ -410,6 +414,7 @@
     margin-bottom: 5rem;
     cursor: pointer;
     color: black;
+    text-align: center;
   }
   .list_s{
     margin-top: 2.5rem;
@@ -453,6 +458,7 @@
    width: 11.25rem;
    height: 100vh;
    justify-content: start;
+   text-align: center;
    
 
    
