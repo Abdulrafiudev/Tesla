@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  scroll-behavior: auto;
+}
 
 .header{
   display: flex;
@@ -18,9 +21,10 @@
   margin-left: 1.25rem;
   width: 10rem;
  
-  
+  position: relative;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 .tesla_logo{
   height: 1.25rem;
@@ -29,7 +33,7 @@
 .middle_section{
   display: flex;
   width: 50rem;
-  
+  position: relative;
   white-space: nowrap;
   color: #5c5d61;
   justify-content: space-evenly;
@@ -37,6 +41,7 @@
   font-family: Montserrat;
   font-weight: 700;
   margin-left: 1.5625rem;
+  z-index: 2;
 
 }
 .list{
@@ -45,7 +50,7 @@
 }
 .right_section{
   display: flex;
- 
+  position: relative;
   flex-shrink: 0;
   justify-content: end;
   color: #5c5d61;
@@ -54,6 +59,7 @@
   font-family: Montserrat;
   font-weight: 700;
   margin-left: 1.25rem;
+  z-index: 2;
   
 
 
@@ -489,4 +495,26 @@
     padding-bottom: 0.625rem;
   }
 }
+.cursor{
+  height: 50px;
+  width: 50px;
+  background-color: darkblue;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  transition: 0.15s;
+  z-index: 1;
+}
+body{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: #5c5d61;
+  
+}
 
+section:hover ~ .cursor{
+  transform: scale(0.6);
+  transition: 0.2s;
+}

@@ -13,18 +13,21 @@
   
   </head>
   <body>
-    <div class="section_1">
+   
+    <section class="section_1" id="first">
+      
       <div class="header">
         <div class="left_section"> <img src="pictures/tesla_logo.svg" class="tesla_logo"> </div>
         <div class="middle_section">
         <img src="pictures/close_icon.png" class="close_icon">
 
 
-          <p class="list list_s"> Model S </p>
-          <p class="list"> Model 3 </p>
-          <p class="list"> Model X </p>
-          <p class="list"> Solar Roof </p>
-          <p class="list"> Solar Panels </p>
+          <a href="#first"><p class="list list_s"> Model S </p></a>
+          <a href="#second"><p class="list"> Model Y </p></a>
+          <a href="#third"><p class="list"> Model 3 </p></a>
+          <a href="#fourth"><p class="list"> Model X </p></a>
+          <a href="#fifth"><p class="list"> Solar Roof </p></a>
+          <a href="#sixth"><p class="list"> Solar Panels </p></a>
          
 
         </div>
@@ -48,8 +51,8 @@
         <button class="button_2"> Existing Inventory</button>
       </div>
       
-    </div>
-    <div class="section_2">
+    </section>
+    <section class="section_2" id="second">
     
       <div class="title">
         
@@ -62,8 +65,8 @@
         <button class="button_2"> Existing Inventory</button>
       </div>
       
-    </div>
-    <div class="section_3">
+    </section>
+    <section class="section_3" id="third">
     
       <div class="title">
         
@@ -76,8 +79,8 @@
         <button class="button_2"> Existing Inventory</button>
       </div>
       
-    </div>
-    <div class="section_4">
+    </section>
+    <section class="section_4" id="fourth">
     
       <div class="title">
         
@@ -90,8 +93,8 @@
         <button class="button_2"> Existing Inventory</button>
       </div>
       
-    </div>
-    <div class="section_5">
+    </section>
+    <section class="section_5" id="fifth">
     
       <div class="title">
         
@@ -104,8 +107,8 @@
         <button class="button_4"> Learn More </button>
       </div>
       
-    </div>
-    <div class="section_6">
+    </section>
+    <section class="section_6" id="sixth">
     
       <div class="title">
         
@@ -118,9 +121,9 @@
         <button class="button_4"> Learn More </button>
       </div>
       
-    </div>
+    </section>
 
-    <div class="section_7">
+    <section class="section_7" id="seventh">
     
       <div class="title">
         
@@ -149,9 +152,9 @@
 
       </div>
       
-    </div>
+    </section>
 
-
+    <div class="cursor"></div>
 
 
 
@@ -166,6 +169,13 @@
 
      document.querySelector(`.close_icon`).addEventListener(`click`, () => {
       document.querySelector(`.middle_section`).classList.remove(`right`)
+     })
+     
+     let cursor = document.querySelector(`.cursor`);
+     document.body.addEventListener(`mousemove`, (event) => {
+        cursor.style.left = `${event.pageX - 20}px`
+        cursor.style.top = `${event.pageY - 13}px`
+        cursor.style.display = `initial`
      })
 
 
